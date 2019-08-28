@@ -5,16 +5,19 @@ import Profile from './Profile.js';
 import Search from './Search.js';
 import config from '../configs/config.js';
 
+
 let styles = StyleSheet.create({
     container:{
         flex:1,
-        flexDirection: 'row',        
+        //flexDirection: 'row',    
+        justifyContent: 'center',
+        alignItems: 'center'    
     }        
   });
 
 const Head = (props) => {
     return (
-        <View style={styles.container}>
+        <View style={styles.container}>            
             <Logo style={styles.logo}/>
             <Profile  />
             <Search />
